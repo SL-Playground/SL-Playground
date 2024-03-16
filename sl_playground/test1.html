@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ASL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="C:\Users\Kuldeep\Desktop\Tejal\scroll.css">
+
+<!--STYLE SHEET OF FEATURE ANIMATION-->
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+
+body{
+ margin:0;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 400;
+}
+
+*{
+ box-sizing: border-box;
+}
+
+.container{
+ max-width: 1170px;
+ width: 100%;
+ margin:auto;
+}
+
+.hi{
+ height: 50vh;
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ flex-wrap: wrap;
+ padding:50px 15px;
+ position: relative;
+}
+.hi::before{
+ content: '';
+ position: absolute;
+ left:0;
+ top:0;
+ width: 100%;
+ height: 100%;
+
+ z-index: 1;
+}
+
+.hi .hi-text{
+ text-align: center;
+ position: relative;
+ z-index: 0;
+}
+
+.hi .hi-text h1{
+color:#ffffff;
+font-size: 50px;
+color:#000;
+line-height: 56px;
+font-weight: 700;
+margin:0 0 20px;
+}
+.hi .hi-text p{
+margin:0;
+overflow: hidden;
+}
+.hi .hi-text p span{
+   font-size: 40px;
+   color:#ff2c45;
+   font-weight: 700;
+   display: inline-block;
+   line-height: 46px;
+   display: none;
+}
+
+.hi .hi-text p span.text-in{
+display: block;
+animation: textIn .3s ease;
+}
+.hi .hi-text p span.text-out{
+animation: textOut .3s ease;
+}
+@keyframes textIn{
+0%{
+transform: translateY(100%);
+}
+100%{
+transform: translateY(0%);
+}
+}
+@keyframes textOut{
+0%{
+transform: translateY(0%);
+}
+100%{
+transform: translateY(-100%);
+
+}
+}
+
+</style>
+
+<style>
+body {font-family: "Lato", sans-serif}
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
+}
+.mySlides {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-color: white; /* Add a white background */
+    z-index: -1; /* Move slides behind other content */
+}
+.mySlides.active {
+    opacity: 1;
+    z-index: 0; /* Bring active slide to front */
+}
+.w3-wide:hover {
+  -ms-transform: scale(1.25); /* IE 9 */
+  -webkit-transform: scale(1.25); /* Safari 3-8 */
+  transform: scale(1.25);
+}
+
+
+.left {
+  padding-left: 20px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  margin: 0 10px; /* Adjust as needed */
+}
+.w3-grey{
+  background-color:rgb(39, 39, 39) ;
+}
+.w3-asl{
+    background-color: rgb(39, 39, 39);
+    color: #fff;
+}
+.text-slide {
+  text-align: center;
+}
+
+.text-slide>div {
+  display: inline-block;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 30px;
+}
+
+.text span {
+  display: block;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.text {
+  position: relative;
+  animation: text-animation ease 8s infinite;
+}
+
+@keyframes text-animation {
+    0% {
+    top: 0;
+  }
+
+  10% {
+    top: 0;
+  }
+
+  20% {
+    top: -40px;
+  }
+
+  30% {
+    top: -40px;
+  }
+
+  40% {
+    top: -80px;
+  }
+
+  50% {
+    top: -80px;
+  }
+
+  60% {
+    top: -120px;
+  }
+
+  70% {
+    top: -120px;
+  }
+
+  80% {
+    top: -160px;
+  }
+
+  90% {
+    top: -160px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+span.heading:nth-child(1) {
+  background-color: #ff4258;
+}
+
+span.heading:nth-child(2) {
+  background-color: #72ff7a;
+  padding-top: 1px;
+}
+
+span.heading:nth-child(3) {
+  background-color: #f0ca4d;
+}
+span.heading:nth-child(4) {
+  background-color: #9759fa;
+}
+
+span.heading:nth-child(5) {
+  background-color: #03c7fd;
+}
+           
+</style>
+
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-asl w3-bar">
+    <div class="text-slide">
+        <br>
+        <div style="padding-left: 35px; color: white;">SL</div>
+        <div class="text-wrap">
+          <div  class="text">
+            <span class="heading">Explore</span>
+            <span class="heading">Play</span>
+            <span class="heading">Translate</span>
+            <span class="heading">Learn</span>
+            <span class="heading">Understand</span>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="w3-bar w3-black w3-card w3-center">
+    <div class="navbar">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+      <a href="#features" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FEATURES</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXPLORE</a>
+      <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#team" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEAM</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+ 
+</div>
+<br><br>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="3.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="4.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="5.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="6.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">  
+    </div>
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+  <!-- The About Section -->
+ 
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <br><br><br>
+    <h2 class="w3-wide">ABOUT</h2>
+    <p class="w3-justify">
+    We have created a fictional team website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. velit We have created a fictional team website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. velit We have created a fictional team website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. velit</p>
+      <p>
+       
+       
+      </p>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+
+  <!--features-->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="features">
+    <br><br><br>
+    <p>
+        <section class="hi">
+            <div class="container">
+               <div class="row">
+                   <div class="hi-text">
+                        <h1>Important Features</h1>
+                        <p class="animate-text">
+                           <span>Motion Detection in SL</span>
+                           <span>Text to Speech Conversion</span>
+                           <span>Learn the SL</span>
+                           <span>Multi-Lingual text and speech</span>
+                           <span>ISL Implementation</span>
+                        </p>
+                        
+                   </div>
+               </div>
+            </div>
+        </section>
+        <br><br><br>
+        <!--JAVASCRIPT TAG OF FEATURE ANIMATION-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+        const txts = document.querySelector(".animate-text").children;
+        const txtsLen = txts.length;
+        let index = 0;
+        const textInTimer = 3000;
+        const textOutTimer = 2800;
+        
+        function animateText() {
+           for (let i = 0; i < txtsLen; i++) {
+               txts[i].classList.remove("text-in", "text-out");
+           }
+           txts[index].classList.add("text-in");
+        
+           setTimeout(function() {
+               txts[index].classList.add("text-out");
+           }, textOutTimer);
+        
+           setTimeout(function() {
+               if (index == txtsLen - 1) {
+                   index = 0;
+               } else {
+                   index++;
+               }
+               animateText();
+           }, textInTimer);
+        }
+        
+        animateText();
+        });
+        
+        </script>
+        
+    </p>
+   
+    </div>
+  <!-- The Categories Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <br><br><br>
+      <h2 class="w3-wide w3-center">EXPLORE DIFFERENT CATEGORIES</h2>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="7.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>ISL</b>
+            <p>ISL (Indian Sign Language) and ASL (American Sign Language) are visual-gestural languages used by Deaf communities. ISL is used primarily in India, while ASL is used predominantly in the United States. Despite similarities in structure, vocabulary, and grammar, they are distinct languages with unique cultural influences and regional variations.
+            </p> </p>
+            <button class="w3-button w3-black w3-margin-bottom" id="one_isl">Get Started</button>
+          </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+    const myButton = document.getElementById("one_isl");
+
+    myButton.addEventListener("click", function() {
+        // Navigate to the new page
+        window.location.href = "isl_new.html";
+    });
+});
+
+        </script>
+        <div class="w3-third w3-margin-bottom">
+          <img src="8.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>ISL Vs ASL</b></p>
+            <p>ISL (Indian Sign Language) and ASL (American Sign Language) are visual languages, each unique to its respective country. They convey meaning through gestures, facial expressions, and body movements. While sharing similarities in structure, they differ in vocabulary and cultural influences, reflecting the diverse communities they serve.
+            </p><br>
+            <button class="w3-button w3-black w3-margin-bottom">Get Started</button>
+
+            
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="9.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>ASL</b></p>
+   
+            <p>American Sign Language (ASL) is a natural language primarily used by Deaf communities in the United States and parts of Canada. It relies on handshapes, movements, and facial expressions to convey meaning. ASL has its own syntax and grammar, distinct from spoken English. It is a rich and expressive language integral to Deaf culture and identity.</p>
+            <button class="w3-button w3-black w3-margin-bottom" id="two_asl">Get Started</button>
+          </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+    const myButton1 = document.getElementById("two_asl");
+
+    myButton1.addEventListener("click", function() {
+        // Navigate to the new page
+        window.location.href = "asl_new.html";
+    });
+});
+
+        </script>
+      </div>
+    </div>
+  </div>
+ <!-- The Team Section -->
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="team">
+  <br><br><br>
+  <h2 class="w3-wide">THE TEAM</h2>
+  <p class="w3-justify">We have created a fictional team website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ 
+  <div class="w3-row w3-padding-32" style="display: flex; justify-content: space-between;">
+    <div class="w3-third">
+      <p>Name</p>
+      <img src="C:\Users\Kuldeep\AppData\Local\Temp\5196139a-9cac-4d26-8860-46227b3ff45e_devhouse (2).zip.45e\5.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+    </div>
+    <div class="w3-third">
+      <p>Name</p>
+      <img src="/w3images/teammember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+    </div>
+    <div class="w3-third">
+      <p>Name</p>
+      <img src="/w3images/teammember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+    </div>
+    <div class="w3-third">
+      <p>Name</p>
+      <img src="/w3images/teammember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+    </div>
+  </div>
+</div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal').style.display='none'"
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <br><br><br>
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("active");  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].classList.add("active");  
+  setTimeout(carousel, 4000);    
+}
+
+// Toggle menu function
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// Close modal function
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+const txts=document.querySelector(".animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=3000,
+                textOutTimer=2800;
+
+         function animateText() {
+            for(let i=0; i<txtsLen; i++){
+              txts[i].classList.remove("text-in","text-out");  
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+              if(index == txtsLen-1){
+                  index=0;
+                }
+               else{
+                   index++;
+                 }
+                animateText();
+            },textInTimer);
+         }
+         
+         window.onload=animateText;
+   
+
+</script>
+
+</body>
+</html>

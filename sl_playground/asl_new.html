@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ASL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="C:\Users\Kuldeep\Desktop\Tejal\scroll.css">
+<style>
+    .text-slide {
+  text-align: center;
+}
+
+.text-slide>div {
+  display: inline-block;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 30px;
+}
+
+.text span {
+  display: block;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.text {
+  position: relative;
+  animation: text-animation ease 8s infinite;
+}
+
+@keyframes text-animation {
+    0% {
+    top: 0;
+  }
+
+  10% {
+    top: 0;
+  }
+
+  20% {
+    top: -40px;
+  }
+
+  30% {
+    top: -40px;
+  }
+
+  40% {
+    top: -80px;
+  }
+
+  50% {
+    top: -80px;
+  }
+
+  60% {
+    top: -120px;
+  }
+
+  70% {
+    top: -120px;
+  }
+
+  80% {
+    top: -160px;
+  }
+
+  90% {
+    top: -160px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+span.heading:nth-child(1) {
+  background-color: #ff4258;
+}
+
+span.heading:nth-child(2) {
+  background-color: #72ff7a;
+  padding-top: 1px;
+}
+
+span.heading:nth-child(3) {
+  background-color: #f0ca4d;
+}
+span.heading:nth-child(4) {
+  background-color: #9759fa;
+}
+
+span.heading:nth-child(5) {
+  background-color: #03c7fd;
+}
+    </style>
+    </head>
+<body>
+
+
+<!-- The Categories Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <br><br><br>
+      <h2 class="w3-wide w3-center">EXPLORE DIFFERENT CATEGORIES</h2>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="C:\Users\Kuldeep\Downloads\devhouse (4).png" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Learn ASL</b></p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            </p> </p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openCamera()">Get Started</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="C:\Users\Kuldeep\Downloads\devhouse (5).png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>ASL to Text</b></p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            </p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openCamera()" id="openCameraButton">Get Started</button>
+           
+
+            <script>
+              let cameraWindow = null;
+     
+              // Function to open camera in a new window
+              function openCamera() {
+                  // Open camera in a new window
+                  cameraWindow = window.open('camera.html', 'cameraWindow', 'width=640,height=480');
+              }
+     
+              // Function to close camera
+              /*function closeCamera() {
+                  if (cameraWindow) {
+                      // Close camera window
+                      cameraWindow.close();
+                      cameraWindow = null;
+                  }
+              }*/
+          </script>
+             
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="C:\Users\Kuldeep\Downloads\devhouse (7).png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Text to Speech</b></p>
+   
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

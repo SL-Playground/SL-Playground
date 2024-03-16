@@ -1,0 +1,8 @@
+0 Can
+1 hello
+2 Help
+3 Me
+4 Nobody
+5 Sad
+6 Understand
+7 Why

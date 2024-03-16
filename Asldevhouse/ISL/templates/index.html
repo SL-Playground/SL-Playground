@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Streaming</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    #video_feed {
+      display: block;
+      margin: 0 auto;
+    }
+    
+    #content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    
+    h2, p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Streaming</h1>
+  <div id="content">
+    <div>
+      <img id="video_feed" width="640" height="480" src="{{ url_for('video') }}" alt="Video Feed">
+    </div>
+    <div>
+      <h2 id="predicted_label">Predicted Label:</h2>
+      <p id="sentence" >sentence</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -172,7 +172,12 @@ body {font-family: "Lato", sans-serif}
   position: relative;
   animation: text-animation ease 8s infinite;
 }
-
+.round-image {
+        border-radius: 50%; /* This makes the image round */
+        width: 200px; /* Adjust width as needed */
+        height: 75px; /* Adjust height as needed */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
 @keyframes text-animation {
     0% {
     top: 0;
@@ -314,12 +319,23 @@ span.heading:nth-child(5) {
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
     <br><br><br>
     <h2 class="w3-wide">ABOUT</h2>
-    <p class="w3-justify">
-    We have created a fictional team website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. velit We have created a fictional team website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. velit We have created a fictional team website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. velit</p>
-      <p>
+    <p class="w3-justify" style="font-family: cursive; font-size: larger">
+        Welcome to our state-of-the-art platform that utilizes advanced machine learning techniques to bridge communication gaps through sign language recognition and translation. Our innovative algorithm combines the power of Long Short-Term Memory (LSTM) and Convolutional Neural Networks (CNN) to accurately detect motion and interpret sign language gestures captured in videos.
+</p>
+      <p class="w3-justify" style="font-family: cursive; font-size: larger">
+        
+        With our technology, users can effortlessly translate sign language motions into text, opening up a world of communication possibilities. Moreover, our platform supports multiple languages, including French, Spanish, and German, ensuring inclusivity and accessibility for diverse communities.
+        
+        
+       
+      </p>
+
+      <p class="w3-justify" style="font-family: cursive; font-size: larger">
+        
+       
+        But we don't stop there. We've integrated a sophisticated machine learning model that verifies the accuracy of sign language gestures captured by the camera, providing real-time feedback and enhancing communication effectiveness.
+        
+        Experience seamless communication across languages and cultures with our revolutionary sign language recognition and translation platform. Join us in breaking down barriers and fostering meaningful connections for all.
        
        
       </p>
@@ -385,6 +401,7 @@ span.heading:nth-child(5) {
     </p>
    
     </div>
+    <div class="w3-black" id="tour">
   <!-- The Categories Section -->
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
@@ -392,7 +409,7 @@ span.heading:nth-child(5) {
       <h2 class="w3-wide w3-center">EXPLORE DIFFERENT CATEGORIES</h2>
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
-          <img src="7.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <img src="13.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>ISL</b>
             <p>ISL (Indian Sign Language) and ASL (American Sign Language) are visual-gestural languages used by Deaf communities. ISL is used primarily in India, while ASL is used predominantly in the United States. Despite similarities in structure, vocabulary, and grammar, they are distinct languages with unique cultural influences and regional variations.
@@ -412,18 +429,18 @@ span.heading:nth-child(5) {
 
         </script>
         <div class="w3-third w3-margin-bottom">
-          <img src="8.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="14.png" alt="New York" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>ISL Vs ASL</b></p>
             <p>ISL (Indian Sign Language) and ASL (American Sign Language) are visual languages, each unique to its respective country. They convey meaning through gestures, facial expressions, and body movements. While sharing similarities in structure, they differ in vocabulary and cultural influences, reflecting the diverse communities they serve.
-            </p><br>
-            <button class="w3-button w3-black w3-margin-bottom">Get Started</button>
+            <br><br><br><br></p>
+           
 
             
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="9.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <img src="12.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>ASL</b></p>
    
@@ -444,33 +461,38 @@ span.heading:nth-child(5) {
         </script>
       </div>
     </div>
-  </div>
+  
+  
  <!-- The Team Section -->
+ <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    
  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="team">
   <br><br><br>
   <h2 class="w3-wide">THE TEAM</h2>
-  <p class="w3-justify">We have created a fictional team website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
- 
+  <p class="w3-justify">We are a dedicated team of four creators passionate about gesture technology, united with the goal of developing a groundbreaking sign language translator. Our endeavor encompasses the integration of cutting-edge machine learning models into our user interface through APIs, resulting in the implementation of several distinctive features. These features not only distinguish our project from existing sign language translator models but also serve as its unique selling points. We are eager to guide you through every aspect of this innovative venture.</p>
   <div class="w3-row w3-padding-32" style="display: flex; justify-content: space-between;">
     <div class="w3-third">
-      <p>Name</p>
-      <img src="C:\Users\Kuldeep\AppData\Local\Temp\5196139a-9cac-4d26-8860-46227b3ff45e_devhouse (2).zip.45e\5.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+      <p>Naman</p>
+      <img src="n.jpg" class="round-image w3-margin-bottom" alt="Random Name" style="width:40%;">
     </div>
     <div class="w3-third">
-      <p>Name</p>
-      <img src="/w3images/teammember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+      <p>Sriansh</p>
+      <img src="s.jpg" class="round-image w3-margin-bottom" alt="Random Name" style="width:40%">
     </div>
     <div class="w3-third">
-      <p>Name</p>
-      <img src="/w3images/teammember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+      <p>Shilpi</p>
+      <img src="sh.jpg" class="round-image w3-margin-bottom" alt="Random Name" style="width:40%">
     </div>
     <div class="w3-third">
-      <p>Name</p>
-      <img src="/w3images/teammember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+      <p>Tejal</p>
+      <img src="t.jpg" class="round-image w3-margin-bottom" alt="Random Name" style="width:40%">
     </div>
   </div>
 </div>
-
+<br><br><br><br><br>
+</div>
+</div>
+</div>
   <!-- Ticket Modal -->
   <div id="ticketModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
@@ -495,12 +517,12 @@ span.heading:nth-child(5) {
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <br><br><br>
     <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <p class="w3-opacity w3-center"><i>Any issues, reach us</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Chennai, India<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 8989012145<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: kalingaDev@gmail.com<br>
       </div>
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">

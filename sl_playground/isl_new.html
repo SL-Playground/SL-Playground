@@ -8,10 +8,13 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="C:\Users\Kuldeep\Desktop\Tejal\scroll.css">
-
-
-
 <style>
+.w3-wide:hover {
+  -ms-transform: scale(1.25); /* IE 9 */
+  -webkit-transform: scale(1.25); /* Safari 3-8 */
+  transform: scale(1.25);
+}
+
     .text-slide {
   text-align: center;
 }
@@ -35,7 +38,11 @@
   position: relative;
   animation: text-animation ease 8s infinite;
 }
-
+.w3-wide:hover {
+  -ms-transform: scale(1.25); /* IE 9 */
+  -webkit-transform: scale(1.25); /* Safari 3-8 */
+  transform: scale(1.25);
+}
 @keyframes text-animation {
     0% {
     top: 0;
@@ -110,23 +117,29 @@ span.heading:nth-child(5) {
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <br><br><br>
-      <h2 class="w3-wide w3-center">EXPLORE DIFFERENT CATEGORIES</h2>
+      <h2 class="w3-wide w3-center">INDIAN SIGN LANGUAGE</h2>
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
-          <img src="C:\Users\Kuldeep\Downloads\devhouse (4).png" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <img src="15.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>Learn ASL</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            <p><b>ISL to Alphabet</b></p>
+            <p>The Indian Sign Language to Alphabets model translates hand gestures into corresponding letters of the alphabet. This innovative tool enables efficient communication for the hearing-impaired, facilitating literacy and language learning by converting sign language gestures into written symbols, enhancing accessibility and inclusivity in educational and social settings.
             </p> </p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="runPython()">Get Started</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="openCamera()">Get Started</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="C:\Users\Kuldeep\Downloads\devhouse (5).png" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <img src="10.png" alt="New York" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>ASL to Text</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-            </p>
+            <p><b>ISL to WORD</b></p>
+            
+            
+        <p>The Indian Sign Language to Words model efficiently converts hand gestures into written text, bridging communication gaps for individuals with hearing impairments. By accurately translating sign language into words, it enhances accessibility and fosters inclusive interactions, empowering the deaf community to engage more fully in various contexts.
+          <br>
+            <br>
+            <br>
+        </p>
+            
             <button class="w3-button w3-black w3-margin-bottom" onclick="openCamera()" id="openCameraButton">Get Started</button>
            
 
@@ -152,24 +165,17 @@ span.heading:nth-child(5) {
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <img src="C:\Users\Kuldeep\Downloads\devhouse (7).png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <img src="16.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
-            <p><b>Text to Speech</b></p>
+            <p><b>ISL to Hindi Language</b></p>
    
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
+            <p>The Text-to-Speech model converts written text into spoken words, utilizing advanced algorithms to generate natural-sounding speech. This technology enhances accessibility for the visually impaired, assists in language learning, and enables hands-free interaction with devices, empowering users to consume information and communicate more effectively in various contexts.
+            </p>
             <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get Started</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script>
-    function runPython() {
-        fetch('/runcode')
-        .then(response => response.text())
-        .then(data => console.log(data))
-        .catch(error => console.error('Error:', error));
-    }
-  </script>
 </body>
 </html>

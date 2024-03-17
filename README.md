@@ -1,4 +1,4 @@
-SL playhouse was made at Devhouse’24 for the deaf  and dumb community. Its major focus is on Indian deaf and dumb community.
+SL playground was made at Devhouse’24 for the deaf  and dumb community. Its major focus is on Indian deaf and dumb community.
 It is aimed at easing the communication between a person who doesn’t understands sign language and a person who can only communicate via sign language.
 This project has its existence due to a sole reason that there are almost 60cr+ people with this disability and there’s no one to cater to there issue at a deep level.
 The basis of this project is backed by the strong machine learning models with an average accuracy >65. 

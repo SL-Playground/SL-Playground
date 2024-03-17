@@ -18,3 +18,5 @@ Important features
 6)We have also introduced the multilingual support for our code which includes almost all the languages out there be it Japanese or English or Chinese or german.
 
 Frontend link- https://sl-playground.github.io/SL-Playground/
+
+Working model-https://youtu.be/qMkM-zELXGI
